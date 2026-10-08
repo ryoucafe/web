@@ -1,5 +1,36 @@
+@font-face {
+    font-family: 'CabinetGrotesk-Regular';
+    src: url('../fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
+         url('../fonts/CabinetGrotesk-Regular.woff') format('woff'),
+         url('../fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+:root {
+    --font-family: 'Satoshi-Regular', sans-serif;
+    --heading-font-family: 'CabinetGrotesk-Regular', sans-serif;
+}
+
 :root.april-fools {
     --font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', cursive;
+    --heading-font-family: var(--font-family);
+}
+
+h1 {
+    font-family: var(--heading-font-family);
+    font-weight: 400;
 }
 
 .important {
