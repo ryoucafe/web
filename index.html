@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/styles.css">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
 </head>
 
 <body>
@@ -15,8 +14,21 @@
     </header>
     <main>
         <button class="theme-toggle">Theme</button>
-        <h1 class="centered important">Work in progress</h1>
+        <div class="centered">
+            <h1 class="important">Work in progress</h1>
+            <div class="now-playing" role="status" hidden>
+                <img class="now-playing__cover" width="56" height="56" alt="" hidden>
+                <div class="now-playing__info">
+                    <div class="now-playing__title"><span class="now-playing__title-text"></span></div>
+                    <div class="now-playing__artist"></div>
+                </div>
+                <div class="now-playing__bars" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="scripts/script.js"></script>
+    <script src="scripts/nowplaying.js" defer></script>
 </body>
 </html>
