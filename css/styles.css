@@ -1,3 +1,7 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .centered {
     height: 100vh;
     margin: 0;
