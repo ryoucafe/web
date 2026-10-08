@@ -1,7 +1,36 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color, #0F1314);
+    color: var(--text-color, #E2E8F0);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+body.light-mode {
+    --bg-color: #FFFFFF;
+    --text-color: #1A202C;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    font-family: inherit;
+    border-radius: 4px;
+}
+
 .centered {
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.important {
+    color: #E8788A;
 }
