@@ -1,26 +1,46 @@
 @font-face {
-    font-family: 'CabinetGrotesk-Regular';
-    src: url('../fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
-         url('../fonts/CabinetGrotesk-Regular.woff') format('woff'),
-         url('../fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+    font-family: 'CabinetGrotesk';
+    src: url('../fonts/cabinetGrotesk/CabinetGrotesk-Regular.woff2') format('woff2'),
+         url('../fonts/cabinetGrotesk/CabinetGrotesk-Regular.woff') format('woff'),
+         url('../fonts/cabinetGrotesk/CabinetGrotesk-Regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Satoshi-Regular';
-    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
-         url('../fonts/Satoshi-Regular.woff') format('woff'),
-         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+    font-family: 'CabinetGrotesk';
+    src: url('../fonts/cabinetGrotesk/CabinetGrotesk-Variable.woff2') format('woff2'),
+         url('../fonts/cabinetGrotesk/CabinetGrotesk-Variable.woff') format('woff'),
+         url('../fonts/cabinetGrotesk/CabinetGrotesk-Variable.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/satoshi/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/satoshi/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/satoshi/Satoshi-Regular.ttf') format('truetype');
     font-weight: 400;
     font-display: swap;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
+         url('../fonts/satoshi/Satoshi-Variable.woff') format('woff'),
+         url('../fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
 :root {
-    --font-family: 'Satoshi-Regular', sans-serif;
-    --heading-font-family: 'CabinetGrotesk-Regular', sans-serif;
+    --font-family: 'Satoshi', sans-serif;
+    --heading-font-family: 'CabinetGrotesk', sans-serif;
 }
 
 :root.april-fools {
@@ -35,6 +55,7 @@ h1 {
 
 .important {
     color: #E8788A;
+    font-weight: 600;
 }
 
 body {
