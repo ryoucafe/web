@@ -1,12 +1,20 @@
+:root.april-fools {
+    --font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', cursive;
+}
+
+.important {
+    color: #E8788A;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-family);
     background-color: var(--bg-color, #0F1314);
     color: var(--text-color, #E2E8F0);
     transition: background-color 0.2s, color 0.2s;
 }
 
 body.light-mode {
-    --bg-color: #FFFFFF;
+    --bg-color: #E2E8F0;
     --text-color: #1A202C;
 }
 
@@ -29,8 +37,4 @@ body.light-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.important {
-    color: #E8788A;
 }
